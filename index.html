@@ -17,19 +17,9 @@
             padding: 0px;
             font-family: 'Bebas Neue', cursive;
         }
-        header div{
-            display: flex;
-            position: relative;
-            width: 100%;
-            height: 50px;
-            margin: 0px;
-            padding: 0px;
-            background-color: rgb(101, 191, 216);
-            margin: 0px;   
-        }
         .general-container{
             display: grid;
-            grid-template-columns: 300px auto;
+            grid-template-columns: 1fr 3fr;
         }
         .side-bar{
             display: flex;
@@ -58,8 +48,8 @@
             margin: 0px;
         }
         .profile-picture{
-            width: 250px;
-            height: 250px;
+            width: 100%;
+            height: 100%;
             border-radius: 200px;
         }
         .content{
@@ -83,6 +73,24 @@
         }
         .content div:nth-child(3){
             background: gold;
+        }
+
+        @media (max-width: 640px) {
+            .general-container{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .side-bar{
+                width: 100%;
+                align-items: center;
+                align-content: center;
+
+            }
+            .profile-picture{
+                width: 90%;
+                margin: 10px;
+            }
+            
         }
     </style>
 </head>
