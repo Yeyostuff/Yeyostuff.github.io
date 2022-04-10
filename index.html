@@ -19,7 +19,7 @@
         }
         header div{
             display: flex;
-            position: absolute;
+            position: relative;
             width: 100%;
             margin: 0px;
             padding: 0px;
@@ -27,12 +27,13 @@
             margin: 0px;   
         }
         .profile-picture{
-            width: 350px;
-            height: 350px;
+            width: 300px;
+            height: 300px;
             border-radius: 200px;
         }
         ul{
             display: flex;
+            width: 100%;
             padding: 0px;
             align-items: center;
         }
@@ -48,11 +49,16 @@
             padding: 5px 15px 5px 15px;
             border-radius: 45px;
         }
+        main{
+            position: relative;
+        }
+        h1{
+            align-self: center;
+        }
     </style>
 </head>
 <body>
-    <main>
-        <header>
+    <header>
             <nav>
                 <div>
                     <figure>
@@ -69,6 +75,10 @@
                 </div>
             </nav>
         </header>
-    </main>
+        <main>
+            <div>
+                <h1>Bienvenido/a a mi BIO</h1>
+            </div>
+        </main>
 </body>
 </html>
