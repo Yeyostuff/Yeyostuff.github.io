@@ -1,44 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: rgb(102, 104, 102);
-    margin: 0px;
-    padding: 0px;
     font-family: 'Bebas Neue', cursive;
 }
 .general-container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
 }
-.side-bar{
+.header{
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    border-radius: 25px;
     margin: 0px;
-    width: 300px;
+    width: 100%;
     height: 100%;
-    background:rgb(101, 191, 216);
+    background: grey;
+    justify-content: center;
     align-items: center;
 }
-.side-bar ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.cover{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-li a{
-    text-decoration: none;
-    color: white;
-    margin: 0px 0px 35px;
-}
-figure{
-    margin: 0px;
+.picture{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
 }
 .profile-picture{
     width: 100%;
     height: 100%;
     border-radius: 200px;
+    border: white solid ;
 }
+.list-container{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+.list-container ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 25px ;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -65,7 +84,7 @@ figure{
 @media (max-width: 640px) {
     .general-container{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .side-bar{
         width: 100%;
@@ -74,8 +93,8 @@ figure{
 
     }
     .profile-picture{
-        width: 90%;
-        margin: 10px;
+        margin: 5px;
+        padding: 0%;
     }
     
 }
