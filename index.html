@@ -8,77 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./style.css">
     <title>Bio</title>
-    <style>
-        body{
-            background: lightgreen;
-            margin: 0px;
-            padding: 0px;
-            font-family: 'Bebas Neue', cursive;
-        }
-        header div{
-            display: flex;
-            position: relative;
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-            background-color: rgb(101, 191, 216);
-            margin: 0px;   
-        }
-        .profile-picture{
-            width: 300px;
-            height: 300px;
-            border-radius: 200px;
-        }
-        ul{
-            display: flex;
-            width: 100%;
-            padding: 0px;
-            align-items: center;
-        }
-        ul li{
-            padding: 10px;
-            font-size: 30px;
-            list-style: none;
-        }
-        li a{
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            background-color: rgb(221, 246, 255);
-            padding: 5px 15px 5px 15px;
-            border-radius: 45px;
-        }
-        main{
-            position: relative;
-        }
-        h1{
-            align-self: center;
-        }
-    </style>
 </head>
 <body>
-    <header>
-            <nav>
-                <div>
-                    <figure>
-                        <img src="https://scontent.fgua1-2.fna.fbcdn.net/v/t1.6435-9/132203704_2784895595055273_8039338983388123475_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=174925&_nc_ohc=5b0TmQU6UccAX9CzzZ-&_nc_ht=scontent.fgua1-2.fna&oh=00_AT_xpwVvT-yE15-4YGy2VQS5PdzhCZAirUkr2gbyVRrW7Q&oe=627860B6" alt="Foto de Jason" class="profile-picture">
-                    </figure>
-                    <ul>
-                        <li>
-                            <a href="#">About me</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div>
-                <h1>Bienvenido/a a mi BIO</h1>
+    <div class="general-container">
+     <header>
+        <div class="header">
+            <div class="cover">
+                <div class="picture">
+                <img src="https://scontent.fgua1-2.fna.fbcdn.net/v/t1.6435-9/132203704_2784895595055273_8039338983388123475_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=174925&_nc_ohc=5b0TmQU6UccAX9CzzZ-&_nc_ht=scontent.fgua1-2.fna&oh=00_AT_xpwVvT-yE15-4YGy2VQS5PdzhCZAirUkr2gbyVRrW7Q&oe=627860B6" alt="Foto de Jason" class="profile-picture">
             </div>
-        </main>
+            </div>    
+            <div class="list-container"> <nav>           
+            <ul>
+                <li>
+                    <a href="#">About me</a>
+                </li>
+                <li>
+                    <a href="#">Contact me</a>
+                </li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+     </header>
+    <main>
+
+        
+        <div>
+            <div class="content">
+                <div class="initial-div">
+                    <p>Bienvenidos</p>
+                </div>
+                <div class="middle-div">
+                    <p>Mi nombre es Jason</p>
+                </div>
+                <div class="final-div">
+                    <p>Me gustan los elotes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
