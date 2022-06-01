@@ -1,10 +1,22 @@
+:root{
+    --primary-color: #479dd6;
+    --secondary-color: #479dd6;
+    --warm-black: #201e1c;
+    --black: #d5ebff;
+    --grey: #bababa;
+    --off-white: #f1f8f7;
+    --just-white: #fff;
+}
+
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 body{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'DM Sans', cursive;
+    font-size: 62.5%;
     width: 100%;
 }
 
@@ -17,7 +29,7 @@ header{
     background: grey;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center;
     background-size: cover;
 }
@@ -27,16 +39,16 @@ header{
     width: 80%;
 }
 .picture img{
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     border-radius: 200px;
-    border: white solid;
+    border: var(--black) solid;
     margin: 15px auto;
 }
 nav{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 nav ul{
     display: flex;
@@ -47,32 +59,135 @@ nav ul{
 }
 li a{
     text-decoration: none;
-    color: white;
-    margin: 0px 25px ;
+    color: var(--warm-black);
+    margin: 0px 40px ;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.content{
+.principal-container{
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
+    background-color: var(--black);
 }
-.content div{
+.principal-container div{
     display: flex;
-    background: greenyellow;
-    border-radius: 40px;
-    height: 250px;
+    height: auto;
     justify-content: center;
+    font-size: 1.1rem;
 }
-.content div:nth-child(1){
-    background: mediumpurple;
+.principal-container div:nth-child(1){
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 80%;
+    padding: 0;
+    margin: 30px 0px 30px auto;
+    border-radius: 25px 0 0 25px;
 }
-.content div:nth-child(2){
-    background: darkgoldenrod;
+
+.principal-container div:nth-child(1) h2{
+    width: 100%;
+    margin: 15px auto 0 15px;
+    padding: 5px;
 }
-.content div:nth-child(3){
-    background: gold;
+
+.principal-container div:nth-child(1) p{
+
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 35px;
+    padding: 5px;
+    line-height: 2rem;
 }
+
+
+.principal-container div:nth-child(2){
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    overflow: hidden;
+    width: 80%;
+    margin: 30px auto 30px 0px;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.principal-container div:nth-child(2) h2{
+
+    width: 100%;
+    margin: 15px auto 0 15px;
+    padding: 5px;
+}
+
+.principal-container div:nth-child(2) p{
+
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 35px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
+.principal-container div:nth-child(3){
+    background: var(--secondary-color);
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px 0px 30px auto;
+    border-radius: 25px 0 0 25px;
+}
+
+.principal-container div:nth-child(3) h2{
+
+    width: 100%;
+    margin: 15px auto 0 15px;
+    padding: 5px;
+}
+
+.principal-container div:nth-child(3) p{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 35px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
+
+
+
+.principal-container div:nth-child(4){
+    background: var(--secondary-color);
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto 30px 0px;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.principal-container div:nth-child(4) h2{
+
+    width: 100%;
+    margin: 15px auto 0 15px;
+    padding: 5px;
+}
+
+.principal-container div:nth-child(4) p{
+
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 35px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
 
 @media (max-width: 640px) {
     .general-container{
